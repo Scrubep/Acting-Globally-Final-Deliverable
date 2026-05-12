@@ -8,6 +8,7 @@ import Team from './pages/Team/Team';
 import Volunteer from './pages/Volunteer/Volunteer';
 import Donate from './pages/Donate/Donate';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
@@ -29,6 +30,7 @@ function App() {
                         <Route path='/Donate' element={<Donate/>}/>
                     </Routes>
                 </div>
+                <Footer />
             </Router>
         </div>
         </>
