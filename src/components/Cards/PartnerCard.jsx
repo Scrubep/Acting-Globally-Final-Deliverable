@@ -1,13 +1,26 @@
 import './PartnerCard.css';
 
-const PartnerCard = ({ title, description, imageUrl, buttonText }) => {
+const PartnerCard = ({ country, orgName, tagline, description, imageUrl}) => {
   return (
     <div className="card">
-      {imageUrl && <img src={imageUrl} alt={title} className="card-image" />}
+      <div className="card-header">
+        <h2 className="card-country">{country}</h2>
+        <div className="card-meta">
+          <span className="card-org">{orgName}</span>
+          {tagline && (
+            <>
+              <span className="card-divider"> | </span>
+              <span className="card-tagline">{tagline}</span>
+            </>
+          )}
+        </div>
+      </div>
+
       <div className="card-body">
-        <h2 className="card-title">{title}</h2>
         <p className="card-text">{description}</p>
-        <button className="card-button">{buttonText}</button>
+        {imageUrl && (
+          <img src={imageUrl} alt={orgName} className="card-image" />
+        )}
       </div>
     </div>
   );
