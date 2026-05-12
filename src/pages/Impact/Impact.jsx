@@ -74,7 +74,7 @@ function Impact() {
 				young people in initiatives that advance climate justice."
   				imageUrl="/dist/assets/ImpactPics/Cameroon.JPG"
 			/>
-        </div>
+      </div>
     );
 }
 
