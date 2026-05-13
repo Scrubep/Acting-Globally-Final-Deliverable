@@ -216,11 +216,6 @@
   transition: border-color 0.2s, color 0.2s;
 }
 
-.ov-contact__email:hover {
-  color: var(--ov-blue-dark);
-  border-color: var(--ov-blue-dark);
-}
-
 /* ================================================================
    RESPONSIVE
    ================================================================ */

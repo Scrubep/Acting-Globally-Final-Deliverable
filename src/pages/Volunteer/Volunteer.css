@@ -44,7 +44,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 340px;
-  background: var(--vs-hero-bg);
+  background: linear-gradient(135deg, #CCECF4, #4099AF);
   overflow: hidden;
 }
 

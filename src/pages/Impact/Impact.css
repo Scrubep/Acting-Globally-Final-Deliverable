@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+.impact-intro {
+  max-width: var(--ov-max-width);
+  margin: 3.5rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.impact-intro__body {
+  font-size: 1.05rem;
+  color: var(--ov-text-mid);
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
+}
+ 
+:root {
+  --is-blue:      #5bbfd6;
+  --is-text-dark: #1a2e3b;
+  --is-max-width: 860px;
+  --is-font:      "DM Sans", system-ui, sans-serif;
+}
+ 
+.is-section {
+  font-family: var(--is-font);
+  text-align: center;
+  padding: 3rem 2rem;
+  max-width: var(--is-max-width);
+  margin: 0 auto;
+}
+ 
+.is-subtitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--is-text-dark);
+  margin-bottom: 2.5rem;
+}
+ 
+.is-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+ 
+.is-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+ 
+.is-stat__text {
+  font-size: 1.05rem;
+  color: var(--is-text-dark);
+  line-height: 1.6;
+}
+ 
+.is-stat__highlight {
+  color: var(--is-blue);
+  font-weight: 700;
+}
+ 
+.is-icon {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+ 
+@media (max-width: 600px) {
+  .is-grid {
+    grid-template-columns: 1fr;
+  }
+}
