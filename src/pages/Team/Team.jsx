@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import TeamCard1 from "../../components/Cards/TeamCard1";
-// import TeamCard2 from "../../components/Cards/TeamCard2";
 
 function Team() {
     return(
