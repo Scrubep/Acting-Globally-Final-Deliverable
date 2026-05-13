@@ -11,18 +11,18 @@ const donationAmounts = [
 
 // ── Stats data ──
 const statsData = [
-  { number: "10", icon: "globe-icon.png", iconAlt: "globe", label: "Countries", desc: "Active partnerships with community groups across the world" },
-  { number: "$40,000+", icon: "grants-icon.png", iconAlt: "grants", label: "Seed Grants", desc: "Direct support for high-impact organizations worldwide" },
-  { number: "5,000+", icon: "lives-icon.png", iconAlt: "lives", label: "Lives Touched", desc: "Transforming the future for people worldwide" },
+  { number: "10", icon: "/dist/assets/donate/world.png", iconAlt: "globe", label: "Countries", desc: "Active partnerships with community groups across the world" },
+  { number: "$40,000+", icon: "/dist/assets/donate/peopleBook.png", iconAlt: "grants", label: "Seed Grants", desc: "Direct support for high-impact organizations worldwide" },
+  { number: "5,000+", icon: "/dist/assets/donate/hand.png", iconAlt: "lives", label: "Lives Touched", desc: "Transforming the future for people worldwide" },
 ];
 
 // ── Carousel images data ──
 const carouselImages = [
-  { src: "/dist/assets/red-panda.jpg", alt: "partner 1" },
-  { src: "/dist/assets/red-panda.jpg", alt: "partner 2" },
-  { src: "/dist/assets/red-panda.jpg", alt: "partner 3" },
-  { src: "/dist/assets/red-panda.jpg", alt: "partner 4" },
-  { src: "/dist/assets/red-panda.jpg", alt: "partner 5" },
+  { src: "/dist/assets/donate/donate1.jpg", alt: "partner 1" },
+  { src: "/dist/assets/donate/donate2.png", alt: "partner 2" },
+  { src: "/dist/assets/donate/donate3.JPG", alt: "partner 3" },
+  { src: "/dist/assets/donate/donate4.jpeg", alt: "partner 4" },
+  { src: "/dist/assets/donate/donate5.jpg", alt: "partner 5" },
 ];
 
 // ── Hero Banner ──

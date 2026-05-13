@@ -2,8 +2,6 @@ import React from "react";
 import TestimonialCard from "../../components/Cards/TestimonialCard";
 import "./Volunteer.css";
 
-const IMAGE_SRC = "../dist/assets/red-panda.jpg";
-
 /* ── Hero ── */
 const Hero = () => (
   <section className="vs-hero">
@@ -16,7 +14,7 @@ const Hero = () => (
       <a href="#signup" className="vs-hero__cta">Sign Up to Volunteer</a>
     </div>
     <div className="vs-hero__image-wrap">
-      <img src={IMAGE_SRC} alt="Volunteers holding certificates" className="vs-hero__image" />
+      <img src="/dist/assets/volunteer/volunteer1.jpeg" alt="Volunteers holding certificates" className="vs-hero__image" />
     </div>
   </section>
 );
