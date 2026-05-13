@@ -35,3 +35,9 @@
   color: #555;
   line-height: 1.6;
 }
+
+.donate-card-2-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
