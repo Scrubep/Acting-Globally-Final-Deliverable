@@ -69,3 +69,27 @@
 .main-content {
     flex: 1;
 }
+
+
+
+.headers-White {
+    font-size: 48px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    color: #2B7DA6;
+}
+
+.headers-Blue {
+    font-size: 48px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    color: #003B59;
+}
+
+
+
+.body-by-header {
+    font-size: 25px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+}

@@ -1,77 +1,78 @@
-/* ─────────────────────────────────────────
-   PartnerCard.css — matches Our Local Partners layout
-───────────────────────────────────────── */
- 
 .card {
-  border-top: 1px solid #e0e0e0;
-  padding: 32px 0;
+  border-top: 1px solid #ebebeb;
+  border-left: 8px solid #2B7DA6;
+  padding: 32px 24px;
+  background: #F8FDFF;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 24px;
 }
- 
-/* ── Header: country + org name/tagline ── */
+
 .card-header {
-  margin-bottom: 16px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ddd;
 }
- 
+
 .card-country {
   font-family: "Georgia", "Times New Roman", serif;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 700;
   color: #1a1a1a;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
- 
+
 .card-meta {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 18px;
   color: #555;
 }
- 
+
 .card-org {
   font-weight: 600;
   color: #333;
 }
- 
+
 .card-divider {
   margin: 0 4px;
   color: #aaa;
 }
- 
+
 .card-tagline {
   font-style: italic;
-  color: #2a7a3b; /* green accent to match Acting Globally brand */
+  font-weight: 700;
+  color: #2C81AB;
 }
- 
-/* ── Body: text left, image right ── */
+
 .card-body {
   display: flex;
-  gap: 28px;
+  gap: 40px;
   align-items: flex-start;
+  margin-top: 20px;
 }
- 
+
 .card-text {
   flex: 1;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.75;
   color: #444;
 }
- 
+
 .card-image {
-  width: 220px;
-  height: 160px;
+  width: 300px;
+  height: 260px;
   object-fit: cover;
-  border-radius: 3px;
+  border-radius: 4px;
   flex-shrink: 0;
 }
- 
-/* ── Responsive ── */
+
 @media (max-width: 640px) {
   .card-body {
     flex-direction: column;
   }
- 
+
   .card-image {
     width: 100%;
     height: 200px;

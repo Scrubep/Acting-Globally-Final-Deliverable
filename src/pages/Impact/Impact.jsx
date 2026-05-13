@@ -1,9 +1,26 @@
 import { Link } from 'react-router-dom';
 import ImpactCard from "../../components/Cards/ImpactCard";
+import BannerPhoto from "../../components/BannerPhoto/BannerPhoto";
+
+/* ── intro ── */
+const Intro = () => (
+  <section className="ov-vision-intro" id="vision">
+    <h1 className="headers-White">Our Impact</h1>
+    <p className="body-by-header">
+      Since our founding in 2023, Acting Globally has:
+    </p>
+  </section>
+);
+
 
 function Impact() {
     return(
         <div>
+
+			<BannerPhoto
+            	image="../dist/assets/ImpactPics/Banner.jpeg"
+          	/> 
+			<Intro />
             <ImpactCard
   				country="Democratic Republic of Congo"
   				title="Enhancing Nutrition"

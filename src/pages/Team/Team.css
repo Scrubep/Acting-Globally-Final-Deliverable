@@ -1,0 +1,11 @@
+.team-hero {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: linear-gradient(135deg, #CCECF4, #4099AF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 48px;
+  margin-top: 0;
+  text-align: center;
+}

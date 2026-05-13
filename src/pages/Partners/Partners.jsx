@@ -1,10 +1,25 @@
 import { Link } from 'react-router-dom';
 import PartnerCard from '../../components/Cards/PartnerCard';
-import Button from '../../components/Button/Button';
+// import Button from '../../components/Button/Button';
+import BannerPhoto from "../../components/BannerPhoto/BannerPhoto";
+
+/* ── intro ── */
+const Intro = () => (
+  <section className="ov-vision-intro" id="vision">
+    <h1 className="headers-White">Our Partners</h1>
+    <p className="body-by-header">
+      Acting Globally is proud to support grassroots organizations that are driving change around the world.
+    </p>
+  </section>
+);
 
 function Partners() {
     return(
         <div className='partners-body'>
+          <BannerPhoto
+            image="../dist/assets/PartnerPics/Banner.jpeg"
+          /> 
+          <Intro />
           <PartnerCard
             country="Democratic Republic of Congo"
             orgName="Congo Peace Academy"

@@ -1,9 +1,20 @@
 import { Link } from 'react-router-dom';
 import TeamCard1 from "../../components/Cards/TeamCard1";
+import './Team.css';
+
+const TeamHero = () => (
+  <div className="team-hero">
+    <h1 className="headers-Blue">
+      Meet the Team <br /> that Makes Acting Globally Happen
+    </h1>
+  </div>
+);
 
 function Team() {
     return(
-        <div className="team-grid">
+        <div>
+            <TeamHero />
+            <div className="team-grid">
             <TeamCard1
                 name="Martin Levine"
                 role="Founder & Chair"
@@ -147,6 +158,9 @@ function Team() {
                 through this digital medium."
             />
         </div>
+        </div>
+        
+        
     );
 }
 

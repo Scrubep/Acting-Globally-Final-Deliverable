@@ -1,19 +1,15 @@
 import { Link } from 'react-router-dom';
 import './Home.css';
+import BannerPhoto from "../../components/BannerPhoto/BannerPhoto";
 
 function Home() {
     return(
         <div>
             <main className="home">
 
-      {/* ── 1. Hero photo ── */}
-      <section className="home__hero">
-        <img
-          src="/dist/assets/red-panda.jpg"
-          alt="Acting Globally community"
-          className="home__hero-img"
-        />
-      </section>
+              <BannerPhoto
+                image="../dist/assets/Home/Banner.jpg"
+              /> 
 
       {/* ── 2. Intro text ── */}
       <section className="home__intro">
