@@ -45,7 +45,7 @@ const PeopleIcon = () => (
 /* ── Our Vision intro ── */
 const VisionIntro = () => (
   <section className="ov-vision-intro" id="vision">
-    <h1 className="ov-section-title">Our Vision</h1>
+    <h1 className="headers-White">Our Vision</h1>
     <p className="ov-vision-intro__body">
       A <strong>Global Community</strong> engaged with the world. Working together for a future where all
       people enjoy lives of dignity and opportunity.
@@ -161,7 +161,9 @@ const ContactCTA = () => (
 /* ── Page ── */
 const OurVision = () => (
   <main className="ov-page">
-    <BannerPhoto />
+    <BannerPhoto
+      image="../dist/assets/Vision/Banner.jpg"
+    /> 
     <VisionIntro />
     <WhatWeBelieve />
     <Banner />

@@ -8,7 +8,7 @@ const IMAGE_SRC = "../dist/assets/red-panda.jpg";
 const Hero = () => (
   <section className="vs-hero">
     <div className="vs-hero__text">
-      <h1 className="vs-hero__title">Transform Lives<br />Around the World</h1>
+      <h1 className="headers-Blue">Transform Lives<br />Around the World</h1>
       <p className="vs-hero__body">
         We match volunteers with grassroots groups where your talents can make a real
         difference. Opportunities are remote, part-time and flexible.

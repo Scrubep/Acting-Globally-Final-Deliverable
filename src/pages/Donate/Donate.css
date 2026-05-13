@@ -1,8 +1,51 @@
-/* ── DonatePage.css ── */
+/* ══════════════════════════════════════
+   HERO
+══════════════════════════════════════ */
+.donate-hero {
+  display: flex;
+  background: linear-gradient(135deg, #CCECF4, #4099AF);
+  padding: 48px 80px;
+  min-height: 280px;
+  max-height: 650px;
+  align-items: center;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-bottom: 80px;
+}
 
+.donate-hero__heading {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.donate-hero__body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  color: #000000;
+  line-height: 1.75;
+  margin-bottom: 12px;
+  max-width: 420px;
+}
+
+.donate-hero__legal {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  color: #000000;
+  line-height: 1.6;
+  margin-top: 20px;
+  max-width: 420px;
+}
+
+/* ══════════════════════════════════════
+   PAGE WRAPPER
+══════════════════════════════════════ */
 .donate-page {
-  padding: 48px;
-  max-width: 900px;
+  padding: 0 48px 48px;
+  max-width: 1300px;
   margin: 0 auto;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
@@ -12,77 +55,118 @@
 }
 
 .donate-page__heading {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 700;
   color: #1a1a1a;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .donate-page__subheading {
-  font-size: 14px;
+  font-size: 20px;
   color: #555;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
-/* ── Donate grid ── */
+/* ══════════════════════════════════════
+   DONATION AMOUNT CARDS
+══════════════════════════════════════ */
 .donate-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 60px;
 }
 
-/* ── Stats grid ── */
-.stats-grid {
+.donate-card {
+  border: 2px solid #d0e8f5;
+  border-radius: 12px;
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.donate-card__amount {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #266D91;
+  margin: 0;
+}
+
+.donate-card__content {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #444;
+  margin: 0;
+}
+
+/* ══════════════════════════════════════
+   STAT CARDS
+══════════════════════════════════════ */
+.donate-card-2-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 60px;
 }
 
-.stat-card {
-  background: #e8f4fb;
+.donate-card-2 {
+  background: #41b7d535;
   border-radius: 12px;
   padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 2px solid #41b7d564;
 }
 
-.stat-card__top {
+.donate-card-2__top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
+  align-items: flex-start;
+  margin-bottom: 12px;
 }
 
-.stat-card__number {
-  font-size: 28px;
+.donate-card-2__number {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 36px;
   font-weight: 700;
-  color: #2a7ab5;
+  color: #266D91;
 }
 
-.stat-card__icon {
+.donate-card-2__icon {
   width: 48px;
   height: 48px;
   object-fit: contain;
+  background: #c5dff0;
+  border-radius: 10px;
+  padding: 8px;
 }
 
-.stat-card__label {
-  font-size: 14px;
+.donate-card-2__label {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 6px;
 }
 
-.stat-card__desc {
-  font-size: 13px;
+.donate-card-2__desc {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
   color: #555;
   line-height: 1.6;
 }
 
-/* ── Carousel ── */
+/* ══════════════════════════════════════
+   CAROUSEL
+══════════════════════════════════════ */
 .carousel {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  position: relative;
 }
 
 .carousel__track {
@@ -119,20 +203,18 @@
 }
 
 .carousel__btn {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  font-size: 20px;
+  background: #EFEFEF;
+  border-radius: 35%;
+  width: 60px; 
+  height: 100px; 
+  font-size: 60px; 
   cursor: pointer;
-  color: #555;
+  color: #8c8c8c;
   flex-shrink: 0;
-  z-index: 1;
 }
 
 .carousel__btn:hover {
-  background: #f0f0f0;
+  background: #d8d8d8;
 }
 
 .carousel__dots {
@@ -156,4 +238,31 @@
   background: #2a7ab5;
   width: 28px;
   border-radius: 5px;
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════ */
+@media (max-width: 768px) {
+  .donate-page {
+    padding: 24px;
+  }
+
+  .donate-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .donate-card-2-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel__slide--active {
+    width: 100%;
+    height: 240px;
+  }
+
+  .carousel__slide--left,
+  .carousel__slide--right {
+    display: none;
+  }
 }
