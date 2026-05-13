@@ -1,0 +1,330 @@
+/* ============================================================
+   VolunteerSignup.css
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap");
+
+/* ── Tokens ── */
+:root {
+  --vs-blue-dark:   #1b4f6a;
+  --vs-blue-mid:    #2a7fa0;
+  --vs-blue-light:  #c8e8f4;
+  --vs-blue-pale:   #dff0f8;
+  --vs-hero-bg:     #cde8f5;
+  --vs-accent:      #5bbfd6;
+  --vs-text-dark:   #1a2e3b;
+  --vs-text-mid:    #3a5a6e;
+  --vs-text-light:  #ffffff;
+  --vs-max-width:   1040px;
+  --vs-font-serif:  "DM Serif Display", Georgia, serif;
+  --vs-font-sans:   "DM Sans", system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+.vs-page {
+  font-family: var(--vs-font-sans);
+  color: var(--vs-text-dark);
+  background: #ffffff;
+}
+
+/* ── Shared ── */
+.vs-section-title {
+  font-family: var(--vs-font-sans);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--vs-text-dark);
+  margin-bottom: 1.75rem;
+}
+
+/* ================================================================
+   HERO
+   ================================================================ */
+.vs-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 340px;
+  background: var(--vs-hero-bg);
+  overflow: hidden;
+}
+
+.vs-hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.1rem;
+  padding: 3rem 3rem 3rem 4rem;
+}
+
+.vs-hero__title {
+  font-family: var(--vs-font-serif);
+  font-style: italic;
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: var(--vs-blue-dark);
+  line-height: 1.2;
+}
+
+.vs-hero__body {
+  font-size: 0.975rem;
+  color: var(--vs-text-mid);
+  line-height: 1.7;
+  max-width: 380px;
+}
+
+.vs-hero__cta {
+  display: inline-block;
+  background: var(--vs-blue-mid);
+  color: var(--vs-text-light);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+
+.vs-hero__cta:hover { background: var(--vs-blue-dark); }
+
+.vs-hero__image-wrap {
+  overflow: hidden;
+}
+
+.vs-hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+/* ================================================================
+   TESTIMONIALS
+   ================================================================ */
+.vs-testimonials {
+  max-width: var(--vs-max-width);
+  margin: 3.5rem auto;
+  padding: 0 2rem;
+}
+
+.vs-testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+/* Override TestimonialCard width inside the grid */
+.vs-testimonials__grid .tc-card {
+  width: 100%;
+}
+
+/* ================================================================
+   STEPS
+   ================================================================ */
+.vs-steps {
+  max-width: var(--vs-max-width);
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+/* Numbered bubbles + connecting line */
+.vs-steps__track {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.vs-step__bubble {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--vs-accent);
+  color: var(--vs-blue-mid);
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.vs-step__line {
+  flex: 1;
+  height: 2px;
+  background: var(--vs-accent);
+}
+
+/* Step text grid — 3 equal columns */
+.vs-steps__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.vs-step__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--vs-text-dark);
+  margin-bottom: 0.4rem;
+}
+
+.vs-step__body {
+  font-size: 0.9rem;
+  color: var(--vs-text-mid);
+  line-height: 1.65;
+}
+
+/* ================================================================
+   FORM
+   ================================================================ */
+.vs-form-wrap {
+  padding: 2rem 2rem 4rem;
+  max-width: var(--vs-max-width);
+  margin: 0 auto;
+}
+
+.vs-form-card {
+  background: #ffffff;
+  border: 1px solid #d0dfe8;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(27, 79, 106, 0.07);
+}
+
+.vs-form__title {
+  font-family: var(--vs-font-sans);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--vs-blue-mid);
+  margin-bottom: 2rem;
+}
+
+/* Two-column form layout */
+.vs-form__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.vs-form__col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Side-by-side first/last name */
+.vs-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Field */
+.vs-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.vs-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--vs-text-dark);
+  line-height: 1.4;
+}
+
+.vs-input,
+.vs-select,
+.vs-textarea {
+  font-family: var(--vs-font-sans);
+  font-size: 0.9rem;
+  color: var(--vs-text-dark);
+  background: #ffffff;
+  border: 1px solid #b8cdd8;
+  border-radius: 6px;
+  padding: 0.55rem 0.75rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+.vs-input:focus,
+.vs-select:focus,
+.vs-textarea:focus {
+  border-color: var(--vs-blue-mid);
+  box-shadow: 0 0 0 3px rgba(42, 127, 160, 0.12);
+}
+
+.vs-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232a7fa0' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2.25rem;
+  cursor: pointer;
+}
+
+.vs-textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.vs-textarea::placeholder,
+.vs-input::placeholder {
+  color: #9ab4c2;
+}
+
+/* Submit */
+.vs-form__submit-row {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.vs-submit {
+  background: var(--vs-accent);
+  color: var(--vs-text-light);
+  font-family: var(--vs-font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.85rem 0;
+  width: 380px;
+  max-width: 100%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.vs-submit:hover { background: var(--vs-blue-mid); }
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+@media (max-width: 860px) {
+  .vs-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .vs-hero__image-wrap { height: 240px; }
+
+  .vs-hero__text {
+    padding: 2.5rem 2rem;
+  }
+
+  .vs-testimonials__grid,
+  .vs-steps__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vs-form__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .vs-form__row {
+    grid-template-columns: 1fr;
+  }
+}
