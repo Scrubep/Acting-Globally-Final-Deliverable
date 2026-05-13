@@ -1,0 +1,393 @@
+/* ─────────────────────────────────────────
+   HomePage.css — Acting Globally Home Page
+───────────────────────────────────────── */
+ 
+:root {
+  --blue: #2a7ab5;
+  --teal: #2a9d8f;
+  --dark: #1a1a1a;
+  --mid: #444444;
+  --light: #666666;
+  --border: #e0e0e0;
+  --font-body: "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Georgia", "Times New Roman", serif;
+}
+ 
+.home {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+ 
+/* ── Shared accent color ── */
+.home__accent {
+  color: var(--blue);
+}
+ 
+/* ── Divider ── */
+.home__divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 48px auto;
+  width: 80px;
+}
+ 
+/* ── Shared buttons ── */
+.btn {
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+ 
+.btn--outline-blue {
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  background: transparent;
+}
+ 
+.btn--outline-blue:hover {
+  background: var(--blue);
+  color: #fff;
+}
+ 
+.btn--filled-blue {
+  background: var(--blue);
+  color: #ffffff;
+  border: 2px solid var(--blue);
+}
+ 
+.btn--filled-blue:hover {
+  background: #1f5f8e;
+  border-color: #1f5f8e;
+}
+ 
+/* ══════════════════════════════════════
+   1. HERO
+══════════════════════════════════════ */
+.home__hero {
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+}
+ 
+.home__hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+ 
+/* ══════════════════════════════════════
+   2. INTRO
+══════════════════════════════════════ */
+.home__intro {
+  padding: 40px 48px 0;
+  max-width: 860px;
+}
+ 
+.home__intro-eyebrow {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--light);
+  margin-bottom: 12px;
+}
+ 
+.home__intro-body {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--dark);
+}
+ 
+/* ══════════════════════════════════════
+   3. SUPPORT
+══════════════════════════════════════ */
+.home__support {
+  padding: 0 48px;
+  text-align: center;
+}
+ 
+.home__support-heading {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+  max-width: 600px;
+  margin: 0 auto 32px;
+  line-height: 1.4;
+}
+ 
+.home__support-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+ 
+.home__support-card-img {
+  width: 45%;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+ 
+.home__support-card {
+  display: flex;
+  flex-direction: row;
+  border-radius: 16px;
+  border-bottom: 6px solid #2a7ab5;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+}
+ 
+.home__support-card-title {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+ 
+.home__support-card-text-wrap {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.home__support-card-text {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+}
+ 
+/* ══════════════════════════════════════
+   4. MAP
+══════════════════════════════════════ */
+.home__map {
+  text-align: center;
+  padding: 0 48px;
+}
+ 
+.home__map-heading {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 24px;
+}
+ 
+.home__map-container {
+  max-width: 860px;
+  margin: 0 auto 28px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+ 
+.home__map-img {
+  width: 100%;
+  display: block;
+}
+ 
+/* ══════════════════════════════════════
+   5. ENGAGEMENTS
+══════════════════════════════════════ */
+.home__engagements {
+  padding: 0 48px;
+  text-align: center;
+}
+ 
+.home__engagements-heading {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 28px;
+}
+ 
+.home__engagements-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 860px;
+  margin: 0 auto;
+  margin-bottom: 130px;
+}
+ 
+.engagement-card {
+  border: 2px solid #a8d8ea;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: left;
+  overflow: visible;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding-bottom: 110px;
+  position: relative;
+}
+ 
+.engagement-card__title {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+ 
+.engagement-card__title--blue {
+  color: #2D8BBA;
+}
+ 
+.engagement-card__title--teal {
+  color: #2D8BBA;
+}
+ 
+.engagement-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+ 
+.engagement-card__list li {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  padding-left: 24px;
+  position: relative;
+}
+ 
+.engagement-card__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2a9d8f;
+  font-weight: 700;
+}
+ 
+.engagement-card__image {
+  width: 90%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  position: absolute;
+  bottom: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+ 
+/* ══════════════════════════════════════
+   6. OPPORTUNITIES
+══════════════════════════════════════ */
+.home__opportunities {
+  padding: 0 48px;
+  text-align: center;
+}
+ 
+.home__opportunities-heading {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 28px;
+}
+ 
+.home__opportunities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+ 
+.opportunity-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 28px 20px;
+  text-align: left;
+}
+ 
+.opportunity-card__icon-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+ 
+.opportunity-card__title {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+ 
+.opportunity-card__text {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--mid);
+}
+ 
+/* ══════════════════════════════════════
+   7. CTA
+══════════════════════════════════════ */
+.home__cta {
+  text-align: center;
+  padding: 0 48px 64px;
+}
+ 
+.home__cta-heading {
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+ 
+.home__cta-sub {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--light);
+  margin-bottom: 24px;
+}
+ 
+/* ══════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════ */
+@media (max-width: 768px) {
+  .home__support-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+ 
+  .home__engagements-grid {
+    grid-template-columns: 1fr;
+  }
+ 
+  .home__opportunities-grid {
+    grid-template-columns: 1fr;
+  }
+ 
+  .home__intro,
+  .home__support,
+  .home__map,
+  .home__engagements,
+  .home__opportunities,
+  .home__cta {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
