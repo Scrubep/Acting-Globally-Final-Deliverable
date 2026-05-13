@@ -3,7 +3,6 @@ import VisionCard from "../../components/Cards/VisionCard";
 import BannerPhoto from "../../components/BannerPhoto/BannerPhoto";
 import "./Vision.css";
  
-const IMAGE_SRC = "../dist/assets/red-panda.jpg";
  
 /* ── Inline SVG icons ── */
 const GlobeIcon = () => (
@@ -51,9 +50,9 @@ const VisionIntro = () => (
       people enjoy lives of dignity and opportunity.
     </p>
     <div className="ov-photo-grid">
-      <img src={IMAGE_SRC} alt="Community scene 1" className="ov-photo-grid__img" />
-      <img src={IMAGE_SRC} alt="Community scene 2" className="ov-photo-grid__img" />
-      <img src={IMAGE_SRC} alt="Community scene 3" className="ov-photo-grid__img" />
+      <img src="/dist/assets/vision/vision1.jpg" alt="Community scene 1" className="ov-photo-grid__img" />
+      <img src="/dist/assets/vision/vision2.jpg" alt="Community scene 2" className="ov-photo-grid__img" />
+      <img src="/dist/assets/vision/vision3.jpg" alt="Community scene 3" className="ov-photo-grid__img" />
     </div>
   </section>
 );
@@ -162,7 +161,7 @@ const ContactCTA = () => (
 const OurVision = () => (
   <main className="ov-page">
     <BannerPhoto
-      image="../dist/assets/Vision/Banner.jpg"
+      image="/dist/assets/Vision/Banner.jpg"
     /> 
     <VisionIntro />
     <WhatWeBelieve />
