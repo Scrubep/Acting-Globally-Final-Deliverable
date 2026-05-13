@@ -4,7 +4,7 @@ import TeamCard1 from "../../components/Cards/TeamCard1";
 
 function Team() {
     return(
-        <div>
+        <div className="team-grid">
             <TeamCard1
                 name="Martin Levine"
                 role="Founder & Chair"

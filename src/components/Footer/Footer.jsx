@@ -10,7 +10,7 @@ const Footer = () => {
 
         <div className="footer-brand">
           <img
-            src="../dist/assets/red-panda.jpg"
+            src="../dist/assets/logo.jpg"
             alt="Acting Globally Logo"
             className="footer-logo"
           />
