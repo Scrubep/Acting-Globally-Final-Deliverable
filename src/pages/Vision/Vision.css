@@ -1,0 +1,252 @@
+/* ============================================================
+   OurVision.css
+   Page styles for the Acting Globally "Our Vision" page.
+   Excludes navbar and footer — handled by parent layout.
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap");
+
+/* ── Design tokens ── */
+:root {
+  --ov-blue-dark:  #1b4f6a;
+  --ov-blue-mid:   #2a7fa0;
+  --ov-blue-light: #d6eaf5;
+  --ov-blue-pale:  #eef6fb;
+  --ov-banner-bg:  #2a6080;
+  --ov-text-dark:  #1a2e3b;
+  --ov-text-mid:   #3a5a6e;
+  --ov-max-width:  960px;
+  --ov-font-serif: "DM Serif Display", Georgia, serif;
+  --ov-font-sans:  "DM Sans", system-ui, sans-serif;
+}
+
+/* ── Page wrapper ── */
+.ov-page {
+  font-family: var(--ov-font-sans);
+  color: var(--ov-text-dark);
+  background: #ffffff;
+}
+
+/* ── Shared section title ── */
+.ov-section-title {
+  font-family: var(--ov-font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--ov-blue-dark);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ================================================================
+   OUR VISION INTRO
+   ================================================================ */
+.ov-vision-intro {
+  max-width: var(--ov-max-width);
+  margin: 3.5rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.ov-vision-intro__body {
+  font-size: 1.05rem;
+  color: var(--ov-text-mid);
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
+}
+
+.ov-vision-intro__body strong {
+  color: var(--ov-blue-dark);
+  font-weight: 600;
+}
+
+/* Photo grid */
+.ov-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ov-photo-grid__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.ov-photo-grid__img:hover { transform: scale(1.03); }
+
+/* ================================================================
+   WHAT WE BELIEVE
+   ================================================================ */
+.ov-beliefs {
+  background: var(--ov-blue-pale);
+  padding: 4rem 2rem;
+}
+
+.ov-beliefs__grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+  max-width: var(--ov-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ================================================================
+   BANNER
+   ================================================================ */
+.ov-banner {
+  background: var(--ov-banner-bg);
+  padding: 3.5rem 2rem;
+  text-align: center;
+}
+
+.ov-banner__title {
+  font-family: var(--ov-font-serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.4;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ================================================================
+   PILLARS SECTION
+   ================================================================ */
+.ov-pillars {
+  max-width: var(--ov-max-width);
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.ov-pillars__intro {
+  font-size: 0.975rem;
+  color: var(--ov-text-mid);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.ov-pillars__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: 2.5rem 0;
+}
+
+.ov-pillar {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.ov-pillar__num {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--ov-blue-mid);
+  color: #ffffff;
+  font-family: var(--ov-font-serif);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(42, 127, 160, 0.25);
+  margin-top: 2px;
+}
+
+.ov-pillar__content {
+  flex: 1;
+  border-left: 3px solid var(--ov-blue-light);
+  padding-left: 1.25rem;
+}
+
+.ov-pillar__title {
+  font-family: var(--ov-font-serif);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--ov-blue-mid);
+  margin-bottom: 0.6rem;
+}
+
+.ov-pillar__body {
+  font-size: 0.95rem;
+  color: var(--ov-text-mid);
+  line-height: 1.75;
+}
+
+.ov-pillars__closing {
+  font-size: 0.975rem;
+  color: var(--ov-text-mid);
+  line-height: 1.75;
+  margin-top: 1rem;
+}
+
+/* ================================================================
+   CONTACT CTA
+   ================================================================ */
+.ov-contact {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.ov-contact__heading {
+  font-family: var(--ov-font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--ov-blue-dark);
+  margin-bottom: 0.75rem;
+}
+
+.ov-contact__email {
+  display: inline-block;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--ov-blue-mid);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.ov-contact__email:hover {
+  color: var(--ov-blue-dark);
+  border-color: var(--ov-blue-dark);
+}
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+@media (max-width: 768px) {
+  .ov-photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ov-photo-grid__img { height: 160px; }
+
+  .ov-beliefs__grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ov-banner__title { font-size: 1.4rem; }
+
+  .ov-pillar {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .ov-pillar__content {
+    border-left: none;
+    padding-left: 0;
+    border-top: 3px solid var(--ov-blue-light);
+    padding-top: 0.75rem;
+  }
+}

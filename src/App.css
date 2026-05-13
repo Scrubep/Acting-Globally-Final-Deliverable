@@ -69,10 +69,3 @@
 .main-content {
     flex: 1;
 }
-
-footer {
-  text-align: center;
-  background-color: #083b6f;
-  color: white;
-  padding: 1rem;
-}
