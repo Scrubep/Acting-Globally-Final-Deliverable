@@ -1,38 +1,59 @@
+/* ── Partner card: text column + full-height image column ── */
 .card {
-  border-top: 1px solid #ebebeb;
-  border-left: 8px solid #2B7DA6;
-  padding: 32px 24px;
-  background: #F8FDFF;
-  border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  max-width: 1100px;
-  margin: 0 auto 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 2.5rem;
+  border-top: 0.0625rem solid #ebebeb;
+  border-left: 0.5rem solid #2b7da6;
+  padding: 2rem 1.5rem;
+  background: #f8fdff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+  max-width: 68.75rem;
+  margin: 0 auto 1.5rem;
+  min-width: 0;
+}
+
+.card__column--text {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__column--media {
+  flex: 0 0 17.5rem;
+  min-width: 10rem;
+  min-height: 0;
+  display: flex;
+  align-self: stretch;
 }
 
 .card-header {
   margin-bottom: 0;
-  padding-bottom: 16px;
-  border-bottom: none;
+  padding-bottom: 1rem;
 }
 
 .card-header-divider {
   border: none;
-  border-top: 1px solid #ddd;
-  margin: 0 0 20px;
-  width: 100%; /* total width minus image width and gap */
+  border-top: 0.125rem solid #2b7da6;
+  margin: 0 0 1.25rem;
+  width: 100%;
+  flex-shrink: 0;
 }
 
 .card-country {
   font-family: "Georgia", "Times New Roman", serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
   color: #1a1a1a;
-  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
 }
 
 .card-meta {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #555;
 }
 
@@ -42,46 +63,50 @@
 }
 
 .card-divider {
-  margin: 0 4px;
+  margin: 0 0.25rem;
   color: #aaa;
 }
 
 .card-tagline {
   font-style: italic;
   font-weight: 700;
-  color: #2C81AB;
-}
-
-.card-body {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  margin-top: 20px;
+  color: #2c81ab;
 }
 
 .card-text {
-  flex: 1;
+  flex: 1 1 auto;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.75;
   color: #444;
 }
 
 .card-image {
-  width: 280px;
-  height: 200px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 12rem;
   object-fit: cover;
-  border-radius: 4px;
-  flex-shrink: 0;
+  border-radius: 0.375rem;
 }
 
-@media (max-width: 640px) {
-  .card-body {
+@media (max-width: 40rem) {
+  .card {
     flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  .card__column--media {
+    flex: 0 0 auto;
+    order: -1;
+    width: 100%;
+    min-height: 12.5rem;
+    height: 14rem;
   }
 
   .card-image {
-    width: 100%;
-    height: 200px;
+    min-height: 0;
+    max-height: none;
   }
 }

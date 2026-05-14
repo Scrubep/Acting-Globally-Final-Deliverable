@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     gap: 2rem;
 
-    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .footer-left {
@@ -27,15 +27,15 @@
 }
 
 .footer-logo {
-    width: 42px;
-    height: 42px;
-    font-size: 25px;
+    width: 2.625rem;
+    height: 2.625rem;
+    font-size: 1.5625rem;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .footer-brand h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     margin: 0;
 }
