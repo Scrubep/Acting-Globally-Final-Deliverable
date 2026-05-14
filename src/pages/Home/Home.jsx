@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './Home.css';
 import BannerPhoto from "../../components/BannerPhoto/BannerPhoto";
+import Button from '../../components/Button/Button';
 
 function Home() {
     return(
@@ -8,7 +9,7 @@ function Home() {
             <main className="home">
 
               <BannerPhoto
-                image="../dist/assets/Home/Banner.jpg"
+                image="/images/home/Banner.jpg"
               /> 
 
       {/* ── 2. Intro text ── */}
@@ -33,7 +34,7 @@ function Home() {
   <div className="home__support-grid">
 
     <div className="home__support-card">
-      <img src="/dist/assets/home/hands.jpg" alt="Community hands" className="home__support-card-img" />
+      <img src="/images/home/hands.jpg" alt="Community hands" className="home__support-card-img" />
       <div className="home__support-card-text-wrap">
         <h3 className="home__support-card-title">Tailored Assistance</h3>
         <p className="home__support-card-text">
@@ -51,7 +52,7 @@ function Home() {
           pilot news programs, or extend their reach into additional communities
         </p>
       </div>
-      <img src="/dist/assets/home/group.jpg" alt="Community gathering" className="home__support-card-img" />
+      <img src="/images/home/group.jpg" alt="Community gathering" className="home__support-card-img" />
     </div>
 
   </div>
@@ -67,9 +68,9 @@ function Home() {
           <span className="home__accent">Africa &amp; Asia</span>
         </h2>
         <div className="home__map-container">
-          <img src="/dist/assets/home/map.png" alt="Map of Africa and Asia" className="home__map-img" />
+          <img src="/images/home/map.png" alt="Map of Africa and Asia" className="home__map-img" />
         </div>
-        <a href="/partners" className="btn btn--outline-blue">Meet Our Partners</a>
+        <Button text={'Meet Our Partners'} color={'#2D8BBA'} path={'/Partners'}/>
       </section>
 
       <hr className="home__divider" />
@@ -91,7 +92,7 @@ function Home() {
               <li>Join a community committed to a world of opportunity for all</li>
               <li>Apply your talents and learn new skills</li>
             </ul>
-            <img src="/dist/assets/home/volunteer.jpeg" alt="Volunteers" className="engagement-card__image" />
+            <img src="/images/home/volunteer.jpeg" alt="Volunteers" className="engagement-card__image" />
           </div>
 
           <div className="engagement-card">
@@ -102,7 +103,7 @@ function Home() {
               <li>Increase your visibility with partners and donors</li>
               <li>Share your successes. Learn from groups in other countries</li>
             </ul>
-            <img src="/dist/assets/home/grassroots.jpg" alt="Grassroots groups" className="engagement-card__image" />
+            <img src="/images/home/grassroots.jpg" alt="Grassroots groups" className="engagement-card__image" />
           </div>
         </div>
       </section>
@@ -116,7 +117,7 @@ function Home() {
         <div className="home__opportunities-grid">
           <div className="opportunity-card">
             <div className="opportunity-card__icon">
-                <img src="/dist/assets/home/person.png" alt="Mentoring icon" className="opportunity-card__icon-img" />
+                <img src="/images/home/person.png" alt="Mentoring icon" className="opportunity-card__icon-img" />
             </div>
             <h3 className="opportunity-card__title">Mentoring Youth</h3>
             <p className="opportunity-card__text">
@@ -127,7 +128,7 @@ function Home() {
 
           <div className="opportunity-card">
             <div className="opportunity-card__icon">
-                <img src="/dist/assets/home/computer.png" alt="tech icon" className="opportunity-card__icon-img" />
+                <img src="/images/home/computer.png" alt="tech icon" className="opportunity-card__icon-img" />
             </div>
             <h3 className="opportunity-card__title">Adopting Technology</h3>
             <p className="opportunity-card__text">
@@ -138,7 +139,7 @@ function Home() {
 
           <div className="opportunity-card">
             <div className="opportunity-card__icon">
-                <img src="/dist/assets/home/money.png" alt="funding icon" className="opportunity-card__icon-img" />
+                <img src="/images/home/money.png" alt="funding icon" className="opportunity-card__icon-img" />
             </div>
             <h3 className="opportunity-card__title">Accessing Funding</h3>
             <p className="opportunity-card__text">
@@ -159,7 +160,7 @@ function Home() {
         <p className="home__cta-sub">
           Create your own volunteer profile and get matched to community groups
         </p>
-        <a href="/volunteer" className="btn btn--filled-blue">Get Started</a>
+        <Button text={'Get Started'} color={'#2D8BBA'} path={'/Volunteer'}/>
       </section>
 
     </main>

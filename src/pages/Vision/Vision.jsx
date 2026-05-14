@@ -3,44 +3,6 @@ import VisionCard from "../../components/Cards/VisionCard";
 import BannerPhoto from "../../components/BannerPhoto/BannerPhoto";
 import "./Vision.css";
  
- 
-/* ── Inline SVG icons ── */
-const GlobeIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="32" cy="32" r="14" fill="#2a8caa" />
-    <ellipse cx="28" cy="28" rx="5" ry="7" fill="#1a6a85" opacity="0.8" />
-    <ellipse cx="36" cy="32" rx="4" ry="5" fill="#1a6a85" opacity="0.7" />
-    <ellipse cx="30" cy="37" rx="3" ry="3" fill="#1a6a85" opacity="0.5" />
-    <path d="M48 22 A20 20 0 0 1 52 32" stroke="#2a8caa" strokeWidth="3" strokeLinecap="round" fill="none" />
-    <polygon points="52,30 49,37 55,36" fill="#2a8caa" />
-    <path d="M16 42 A20 20 0 0 1 12 32" stroke="#2a8caa" strokeWidth="3" strokeLinecap="round" fill="none" />
-    <polygon points="12,34 15,27 9,28" fill="#2a8caa" />
-    <path d="M20 20 A20 20 0 0 0 32 14" stroke="#2a8caa" strokeWidth="3" strokeLinecap="round" fill="none" />
-    <polygon points="34,14 27,11 28,18" fill="#2a8caa" />
-  </svg>
-);
- 
-const RunnerIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="36" cy="12" r="5" fill="#2a8caa" />
-    <path d="M34 18 L28 30 L20 36" stroke="#2a8caa" strokeWidth="3" strokeLinecap="round" fill="none" />
-    <path d="M28 30 L34 40 L30 52" stroke="#2a8caa" strokeWidth="3" strokeLinecap="round" fill="none" />
-    <path d="M34 18 L44 24 L50 20" stroke="#2a8caa" strokeWidth="3" strokeLinecap="round" fill="none" />
-    <path d="M38 35 L48 38" stroke="#2a8caa" strokeWidth="3" strokeLinecap="round" fill="none" />
-  </svg>
-);
- 
-const PeopleIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="32" cy="20" r="7" fill="#2a8caa" />
-    <circle cx="14" cy="26" r="5" fill="#2a8caa" opacity="0.75" />
-    <circle cx="50" cy="26" r="5" fill="#2a8caa" opacity="0.75" />
-    <path d="M18 48 Q32 38 46 48" stroke="#2a8caa" strokeWidth="3" strokeLinecap="round" fill="none" />
-    <path d="M6 52 Q14 44 22 48" stroke="#2a8caa" strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.75" />
-    <path d="M58 52 Q50 44 42 48" stroke="#2a8caa" strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.75" />
-  </svg>
-);
- 
 /* ── Our Vision intro ── */
 const VisionIntro = () => (
   <section className="ov-vision-intro" id="vision">
@@ -50,9 +12,9 @@ const VisionIntro = () => (
       people enjoy lives of dignity and opportunity.
     </p>
     <div className="ov-photo-grid">
-      <img src="/dist/assets/vision/vision1.jpg" alt="Community scene 1" className="ov-photo-grid__img" />
-      <img src="/dist/assets/vision/vision2.jpg" alt="Community scene 2" className="ov-photo-grid__img" />
-      <img src="/dist/assets/vision/vision3.jpg" alt="Community scene 3" className="ov-photo-grid__img" />
+      <img src="/images/vision/vision1.jpg" alt="Community scene 1" className="ov-photo-grid__img" />
+      <img src="/images/vision/vision2.jpg" alt="Community scene 2" className="ov-photo-grid__img" />
+      <img src="/images/vision/vision3.jpg" alt="Community scene 3" className="ov-photo-grid__img" />
     </div>
   </section>
 );
@@ -62,17 +24,17 @@ const beliefCards = [
   {
     headtext: "Sustainable Change",
     subtext: "must be driven by those closest to the needs they address.",
-    icon: <GlobeIcon />,
+    icon: "/images/red-panda.jpg",
   },
   {
     headtext: "Committed Individuals",
     subtext: "worldwide are eager to contribute their talents.",
-    icon: <RunnerIcon />,
+    icon: "/images/red-panda.jpg",
   },
   {
     headtext: "Connecting People",
     subtext: "around shared goals can achieve extraordinary results.",
-    icon: <PeopleIcon />,
+    icon: "/images/red-panda.jpg",
   },
 ];
  
@@ -161,7 +123,7 @@ const ContactCTA = () => (
 const OurVision = () => (
   <main className="ov-page">
     <BannerPhoto
-      image="/dist/assets/Vision/Banner.jpg"
+      image="/images/vision/Banner.jpg"
     /> 
     <VisionIntro />
     <WhatWeBelieve />
