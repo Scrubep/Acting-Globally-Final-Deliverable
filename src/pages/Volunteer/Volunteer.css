@@ -147,12 +147,14 @@
   justify-content: center;
   background: #ffffff;
   z-index: 1;
+  position: relative;
 }
 
 .vs-step__line {
   flex: 1;
   height: 0.125rem;
   background: var(--vs-accent);
+  margin: 0;
 }
 
 /* Step text grid — 3 equal columns */

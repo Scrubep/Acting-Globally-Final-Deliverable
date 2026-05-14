@@ -75,6 +75,7 @@ const Steps = () => (
           {i < steps.length - 1 && <div className="vs-step__line" />}
         </React.Fragment>
       ))}
+      <div className="vs-step__line" />
     </div>
     <div className="vs-steps__grid">
       {steps.map((step) => (
