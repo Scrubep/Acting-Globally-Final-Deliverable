@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap");
- 
+
 /* ── Design tokens ── */
 :root {
   --vc-bg: #d6e8f5;
@@ -26,7 +25,7 @@
   box-shadow:
     0 8px 32px rgba(27, 111, 138, 0.13),
     0 2px 8px rgba(27, 111, 138, 0.07);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
  
@@ -71,9 +70,9 @@
  
 /* ── Head text ── */
 .vc-headtext {
-  font-family: "DM Serif Display", serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 1.45rem;
-  font-weight: 400;
+  font-weight: 800;
   color: var(--vc-text-head);
   margin: 0 0 16px;
   line-height: 1.25;
