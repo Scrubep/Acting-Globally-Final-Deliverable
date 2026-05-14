@@ -14,7 +14,7 @@ const Hero = () => (
       <a href="#signup" className="vs-hero__cta">Sign Up to Volunteer</a>
     </div>
     <div className="vs-hero__image-wrap">
-      <img src="/dist/assets/volunteer/volunteer1.jpeg" alt="Volunteers holding certificates" className="vs-hero__image" />
+      <img src="/images/volunteer/volunteer1.jpeg" alt="Volunteers holding certificates" className="vs-hero__image" />
     </div>
   </section>
 );

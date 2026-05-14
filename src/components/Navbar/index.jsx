@@ -10,7 +10,7 @@ const Navbar = function Navbar() {
                 <li className='logo'>
                     <Link to='/'>
                     <img
-                        src="../dist/assets/logo.jpg"
+                        src="/images/logo.jpg"
                         alt="Acting Globally Logo"
                         className="navbar-logo"
                     />

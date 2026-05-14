@@ -17,7 +17,7 @@ function Partners() {
     return(
         <div className='partners-body'>
           <BannerPhoto
-            image="../dist/assets/PartnerPics/Banner.jpeg"
+            image="/images/PartnerPics/Banner.jpeg"
           /> 
           <Intro />
           <PartnerCard
@@ -33,7 +33,7 @@ function Partners() {
             the Future, which prepares young people to apply to international 
             universities; and Agri Peace, combining training in conservation 
             agriculture with intentional peacebuilding."
-            imageUrl="../dist/assets/PartnerPics/Congo.png"
+            imageUrl="/images/PartnerPics/Congo.png"
           />
           <PartnerCard
             country="Iraq"
@@ -47,7 +47,7 @@ function Partners() {
             lived experience into systems change – serving as a platform for 
             survivor-led change and building the evidence, standards, and 
             institutional will to and reshape global policy."
-            imageUrl="../dist/assets/PartnerPics/Iraq.png"
+            imageUrl="/images/PartnerPics/Iraq.png"
           />
           <PartnerCard
             country="Uganda"
@@ -62,7 +62,7 @@ function Partners() {
             health services, counseling and psychological support for women 
             affected by gender-based violence; and sexual and reproductive 
             health rights training."
-            imageUrl="../dist/assets/PartnerPics/Uganda.jpeg"
+            imageUrl="/images/PartnerPics/Uganda.jpeg"
           />
           <PartnerCard
             country="The Philippines"
@@ -77,7 +77,7 @@ function Partners() {
             therapy; group therapy sessions embodying empowering play and 
             therapeutic arts activities; training for caregivers; and child 
             protection sessions to help prevent abuse."
-            imageUrl="../dist/assets/PartnerPics/Philippines.png"
+            imageUrl="/images/PartnerPics/Philippines.png"
           />
           <PartnerCard
             country="India"
@@ -92,7 +92,7 @@ function Partners() {
              co-curricular support from the earliest years through high school. 
              The Centre’s programs feature digital learning tools, a STEAM 
              laboratory, and facilities for music and arts."
-            imageUrl="../dist/assets/PartnerPics/India.jpg"
+            imageUrl="/images/PartnerPics/India.jpg"
           />
           <PartnerCard
             country="Cambodia"
@@ -109,7 +109,7 @@ function Partners() {
             with supplementary education and project-based workshops 
             supporting communities. The organization also provides 
             scholarships for young people to attend a local university."
-            imageUrl="../dist/assets/PartnerPics/Cambodia.JPG"
+            imageUrl="/images/PartnerPics/Cambodia.JPG"
           />
           <PartnerCard
             country="Cameroon"
@@ -124,7 +124,7 @@ function Partners() {
             support youth participation in debates on pressing social 
             issues and climate-action projects, while fostering entrepreneurial 
             and leadership skills, and advocacy for gender inclusion."
-            imageUrl="../dist/assets/PartnerPics/Cameroon.jpg"
+            imageUrl="/images/PartnerPics/Cameroon.JPG"
           />
           <PartnerCard
             country="Ethiopia"
@@ -138,7 +138,7 @@ function Partners() {
             Their “People First” holistic approach to development empowers women, 
             while fostering peacebuilding and social cohesion in a region that has 
             experienced violence in the past."
-            imageUrl="../dist/assets/PartnerPics/Ethiopia.jpeg"
+            imageUrl="/images/PartnerPics/Ethiopia.jpeg"
           />
           <PartnerCard
             country="Guinea"
@@ -152,7 +152,7 @@ function Partners() {
             to breaking the cycle of poverty in Africa by delivering clean, reliable 
             energy solutions to expand access to healthcare, education and safe, 
             thriving communities."
-            imageUrl="../dist/assets/PartnerPics/Guinea.jpeg"
+            imageUrl="/images/PartnerPics/Guinea.jpeg"
           />
           <PartnerCard
             country="Nepal"
@@ -165,7 +165,7 @@ function Partners() {
             engages and empowers youth to take leadership roles in promoting 
             health and wellbeing, climate adaptation and mitigation, sustainable 
             urban planning, and access to education throughout Nepal."
-            imageUrl="../dist/assets/PartnerPics/Nepal.jpg"
+            imageUrl="/images/PartnerPics/Nepal.jpg"
           />
         </div>
     );

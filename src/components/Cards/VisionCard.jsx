@@ -1,7 +1,7 @@
 import React from "react";
 import "./VisionCard.css";
  
-const VisionCard = ({ headtext = 'text', subtext = 'text', icon = '../dist/assets/red-panda.jpg' }) => {
+const VisionCard = ({ headtext = 'text', subtext = 'text', icon = '/images/red-panda.jpg' }) => {
   return (
     <div className="vc-card">
       {/* Decorative wave layers */}

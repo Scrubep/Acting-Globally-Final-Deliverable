@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useLayoutEffect, useMemo, useRef, useState } from "react";
 import "./Donate.css";
 
 // ── Donation amounts data ──
@@ -11,18 +11,18 @@ const donationAmounts = [
 
 // ── Stats data ──
 const statsData = [
-  { number: "10", icon: "/dist/assets/donate/world.png", iconAlt: "globe", label: "Countries", desc: "Active partnerships with community groups across the world" },
-  { number: "$40,000+", icon: "/dist/assets/donate/peopleBook.png", iconAlt: "grants", label: "Seed Grants", desc: "Direct support for high-impact organizations worldwide" },
-  { number: "5,000+", icon: "/dist/assets/donate/hand.png", iconAlt: "lives", label: "Lives Touched", desc: "Transforming the future for people worldwide" },
+  { number: "10", icon: "/images/donate/world.png", iconAlt: "globe", label: "Countries", desc: "Active partnerships with community groups across the world" },
+  { number: "$40,000+", icon: "/images/donate/peopleBook.png", iconAlt: "grants", label: "Seed Grants", desc: "Direct support for high-impact organizations worldwide" },
+  { number: "5,000+", icon: "/images/donate/hand.png", iconAlt: "lives", label: "Lives Touched", desc: "Transforming the future for people worldwide" },
 ];
 
 // ── Carousel images data ──
 const carouselImages = [
-  { src: "/dist/assets/donate/donate1.jpg", alt: "partner 1" },
-  { src: "/dist/assets/donate/donate2.png", alt: "partner 2" },
-  { src: "/dist/assets/donate/donate3.JPG", alt: "partner 3" },
-  { src: "/dist/assets/donate/donate4.jpeg", alt: "partner 4" },
-  { src: "/dist/assets/donate/donate5.jpg", alt: "partner 5" },
+  { src: "/images/donate/donate1.jpg", alt: "partner 1" },
+  { src: "/images/donate/donate2.png", alt: "partner 2" },
+  { src: "/images/donate/donate3.JPG", alt: "partner 3" },
+  { src: "/images/donate/donate4.jpeg", alt: "partner 4" },
+  { src: "/images/donate/donate5.jpg", alt: "partner 5" },
 ];
 
 // ── Hero Banner ──
@@ -106,17 +106,80 @@ const StatsGrid = () => (
 
 // ── Carousel ──
 const Carousel = () => {
+  const n = carouselImages.length;
   const [activeIndex, setActiveIndex] = useState(0);
+  const maskRef = useRef(null);
+  const shouldTransitionRef = useRef(true);
+  const [metrics, setMetrics] = useState({
+    viewW: 732,
+    mainW: 460,
+    gap: 16,
+    step: 476,
+    base: 136,
+  });
 
-  const prev = () => setActiveIndex((i) => (i === 0 ? carouselImages.length - 1 : i - 1));
-  const next = () => setActiveIndex((i) => (i === carouselImages.length - 1 ? 0 : i + 1));
+  const extendedSlides = useMemo(() => {
+    if (n === 0) return [];
+    return [
+      { img: carouselImages[n - 1], key: "clone-prev", trackIndex: 0 },
+      ...carouselImages.map((img, i) => ({
+        img,
+        key: img.src,
+        trackIndex: i + 1,
+      })),
+      { img: carouselImages[0], key: "clone-next", trackIndex: n + 1 },
+    ];
+  }, [n]);
 
-  const getSlideClass = (index) => {
-    if (index === activeIndex) return "carousel__slide carousel__slide--active";
-    if (index === (activeIndex - 1 + carouselImages.length) % carouselImages.length) return "carousel__slide carousel__slide--left";
-    if (index === (activeIndex + 1) % carouselImages.length) return "carousel__slide carousel__slide--right";
-    return "carousel__slide carousel__slide--hidden";
+  useLayoutEffect(() => {
+    const mask = maskRef.current;
+    if (!mask) return;
+
+    const update = () => {
+      const viewW = mask.clientWidth;
+      if (viewW < 80) return;
+      const gap = 16;
+      const peekMin = 72;
+      const mainW = Math.min(460, Math.max(200, viewW - 2 * peekMin - 2 * gap));
+      const step = mainW + gap;
+      const base = (viewW - mainW) / 2;
+      setMetrics({ viewW, mainW, gap, step, base });
+    };
+
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(mask);
+    return () => ro.disconnect();
+  }, []);
+
+  const { step, base, mainW } = metrics;
+  const centerTrackIndex = activeIndex + 1;
+  const translateX = base - centerTrackIndex * step;
+
+  const goPrev = () => {
+    setActiveIndex((i) => {
+      const ni = i === 0 ? n - 1 : i - 1;
+      shouldTransitionRef.current = Math.abs(ni - i) === 1;
+      return ni;
+    });
   };
+
+  const goNext = () => {
+    setActiveIndex((i) => {
+      const ni = i === n - 1 ? 0 : i + 1;
+      shouldTransitionRef.current = Math.abs(ni - i) === 1;
+      return ni;
+    });
+  };
+
+  const goTo = (index) => {
+    setActiveIndex((cur) => {
+      shouldTransitionRef.current = Math.abs(index - cur) === 1;
+      return index;
+    });
+  };
+
+  const trackInstant = !shouldTransitionRef.current;
 
   return (
     <section className="donate-page__section">
@@ -125,20 +188,56 @@ const Carousel = () => {
         Click through to see moments from communities Acting Globally volunteers have supported!
       </p>
       <div className="carousel">
-        <button className="carousel__btn" onClick={prev}>&#8249;</button>
-        <div className="carousel__track">
-          {carouselImages.map((img, index) => (
-            <img key={img.src} className={getSlideClass(index)} src={img.src} alt={img.alt} />
-          ))}
+        <button type="button" className="carousel__btn" onClick={goPrev} aria-label="Previous slide">
+          &#8249;
+        </button>
+        <div className="carousel__mask" ref={maskRef}>
+          <div
+            className={`carousel__track${trackInstant ? " carousel__track--instant" : ""}`}
+            style={{
+              transform: `translateX(${translateX}px)`,
+            }}
+          >
+            {extendedSlides.map((item) => {
+              const ti = item.trackIndex;
+              const isActive = ti === centerTrackIndex;
+              const isAdjacent = ti === centerTrackIndex - 1 || ti === centerTrackIndex + 1;
+              let cellClass = "carousel__cell";
+              if (isActive) cellClass += " carousel__cell--active";
+              else if (isAdjacent) cellClass += " carousel__cell--adjacent";
+
+              return (
+                <div
+                  key={item.key}
+                  className={cellClass}
+                  style={{
+                    flex: `0 0 ${step}px`,
+                    boxSizing: "border-box",
+                  }}
+                >
+                  <img
+                    className="carousel__img"
+                    src={item.img.src}
+                    alt={item.img.alt}
+                    style={{ width: mainW, maxWidth: "100%" }}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
-        <button className="carousel__btn" onClick={next}>&#8250;</button>
+        <button type="button" className="carousel__btn" onClick={goNext} aria-label="Next slide">
+          &#8250;
+        </button>
       </div>
       <div className="carousel__dots">
         {carouselImages.map((img, index) => (
           <button
+            type="button"
             key={img.src}
             className={`carousel__dot ${index === activeIndex ? "carousel__dot--active" : ""}`}
-            onClick={() => setActiveIndex(index)}
+            onClick={() => goTo(index)}
+            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>

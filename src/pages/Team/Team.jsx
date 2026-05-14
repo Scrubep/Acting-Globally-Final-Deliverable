@@ -18,7 +18,7 @@ function Team() {
             <TeamCard1
                 name="Martin Levine"
                 role="Founder & Chair"
-                imageUrl="/dist/assets/TeamPics/marty.png"
+                imageUrl="/images/TeamPics/marty.png"
                 bio="Dr. Martin Levine is Acting Globally’s Founder and Chair. He sets the 
                 strategic direction for the enterprise, oversees our finances and actively 
                 manages relations with our local partners and other stakeholders. A social 
@@ -30,7 +30,7 @@ function Team() {
             <TeamCard1
                 name="Erin Anastasi"
                 role="Partnership Manager"
-                imageUrl="/dist/assets/TeamPics/erin.jpg"
+                imageUrl="/images/TeamPics/erin.jpg"
                 bio="Dr. Erin Anastasi is a recognized leader and passionate advocate for women’s 
                 and children’s health and human rights, gender equality and dignity for all. With 
                 over 15 years’ experience in global health and development, Erin has held senior 
@@ -41,7 +41,7 @@ function Team() {
             <TeamCard1
                 name="Elijah Bader-Gregory"
                 role="Partnership Manager"
-                imageUrl="/dist/assets/TeamPics/elijah.jpg"
+                imageUrl="/images/TeamPics/elijah.jpg"
                 bio="Elijah Bader-Gregory is a senior at the University of Rochester with a strong 
                 commitment to global engagement and youth empowerment. He serves as a Partnership 
                 Manager for Acting Globally’s collaboration with the Congo Peace Academy, where he 
@@ -53,7 +53,7 @@ function Team() {
             <TeamCard1
                 name="Johara Bourke"
                 role="Partnership Manager"
-                imageUrl="/dist/assets/TeamPics/johara.JPG"
+                imageUrl="/images/TeamPics/johara.JPG"
                 bio="Dr. Johara Bourke is a cross-cultural program manager and conservation 
                 biologist, with more than  20 years of research and social development experience 
                 in 10 countries worldwide. With a PhD in Ecology and Conservation, Dr. Bourke has 
@@ -65,7 +65,7 @@ function Team() {
             <TeamCard1
                 name="Sera Carey"
                 role="Partnership Manager"
-                imageUrl="/dist/assets/TeamPics/sera.png"
+                imageUrl="/images/TeamPics/sera.png"
                 bio="Sera Carey is a young professional in Public Policy and International 
                 Development. She brings a passion for climate security, promoting refugee 
                 rights, and applying research to identify solutions to global challenges. 
@@ -77,7 +77,7 @@ function Team() {
             <TeamCard1
                 name="Cathlin Craver"
                 role="Partnership Manager"
-                imageUrl="/dist/assets/TeamPics/cathlin.jpg"
+                imageUrl="/images/TeamPics/cathlin.jpg"
                 bio="Dr. Cathlin Craver is a dedicated nonprofit professional with more than 
                 15 years of experience. From coordinating One Health initiatives in Botswana to 
                 managing grants for global textile artisans, she specializes in building resilient 
@@ -89,7 +89,7 @@ function Team() {
             <TeamCard1
                 name="Madison Collins"
                 role="Partnership Manager"
-                imageUrl="/dist/assets/TeamPics/madison.jpg"
+                imageUrl="/images/TeamPics/madison.jpg"
                 bio="Madison Collins has seven years of experience in global development, 
                 focusing on designing and implementing Monitoring, Evaluation, Research, 
                 and Learning (MERL) systems for international development organizations and 
@@ -102,7 +102,7 @@ function Team() {
             <TeamCard1
                 name="Mai Huang"
                 role="Partnership Manager"
-                imageUrl="/dist/assets/TeamPics/mai.jpeg"
+                imageUrl="/images/TeamPics/mai.jpeg"
                 bio="Mai Huang brings more than 20 years of experience as a USAID Program 
                 Officer and Criminal Investigator. Throughout her career managing development 
                 initiatives across Asia, the South Pacific, Africa, and Eastern Europe, Mai consistently 
@@ -113,7 +113,7 @@ function Team() {
             <TeamCard1
                 name="Nikita Kheni"
                 role="Partnership Manager"
-                imageUrl="/dist/assets/TeamPics/nikita.JPG"
+                imageUrl="/images/TeamPics/nikita.JPG"
                 bio="Nikita Kheni is a public health professional with experience advancing health 
                 outcomes through strategic program development, evidence-based resources, and 
                 human-centered design in areas including environmental health, emergency 
@@ -125,7 +125,7 @@ function Team() {
             <TeamCard1
                 name="Beatrice McDermott"
                 role="Partnership Manager"
-                imageUrl="/dist/assets/TeamPics/beatrice.jpg"
+                imageUrl="/images/TeamPics/beatrice.jpg"
                 bio="Beatrice McDermott is a recently returned Peace Corps volunteer who served for 
                 two years in the Dominican Republic as a Childhood Literacy Promoter. She brings 
                 experience in childhood education, community engagement, and volunteer training 
@@ -137,7 +137,7 @@ function Team() {
             <TeamCard1
                 name="Samantha VanDrisse"
                 role="Partnership Manager"
-                imageUrl="/dist/assets/TeamPics/samantha.jpg"
+                imageUrl="/images/TeamPics/samantha.jpg"
                 bio="Samantha VanDrisse is a corporate sustainability and social compliance 
                 professional dedicated to advancing safe, ethical, and equitable working 
                 conditions across global supply chains. She has led programs spanning 300+ factories, 
@@ -148,7 +148,7 @@ function Team() {
             <TeamCard1
                 name="Alexa Rosenbloom"
                 role="Partnership Manager"
-                imageUrl="/dist/assets/TeamPics/alexa.png"
+                imageUrl="/images/TeamPics/alexa.png"
                 bio="Alexa Rosenbloom is a recent graduate from the University of Rochester, 
                 where she studied Political Science and History. At Acting Globally, she has 
                 supported fundraising efforts and volunteer recruitment through social media 

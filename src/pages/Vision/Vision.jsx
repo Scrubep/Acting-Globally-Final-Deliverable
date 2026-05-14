@@ -3,8 +3,6 @@ import VisionCard from "../../components/Cards/VisionCard";
 import BannerPhoto from "../../components/BannerPhoto/BannerPhoto";
 import "./Vision.css";
  
-
- 
 /* ── Our Vision intro ── */
 const VisionIntro = () => (
   <section className="ov-vision-intro" id="vision">
@@ -14,9 +12,9 @@ const VisionIntro = () => (
       people enjoy lives of dignity and opportunity.
     </p>
     <div className="ov-photo-grid">
-      <img src="/dist/assets/vision/vision1.jpg" alt="Community scene 1" className="ov-photo-grid__img" />
-      <img src="/dist/assets/vision/vision2.jpg" alt="Community scene 2" className="ov-photo-grid__img" />
-      <img src="/dist/assets/vision/vision3.jpg" alt="Community scene 3" className="ov-photo-grid__img" />
+      <img src="/images/vision/vision1.jpg" alt="Community scene 1" className="ov-photo-grid__img" />
+      <img src="/images/vision/vision2.jpg" alt="Community scene 2" className="ov-photo-grid__img" />
+      <img src="/images/vision/vision3.jpg" alt="Community scene 3" className="ov-photo-grid__img" />
     </div>
   </section>
 );
@@ -26,17 +24,17 @@ const beliefCards = [
   {
     headtext: "Sustainable Change",
     subtext: "must be driven by those closest to the needs they address.",
-    icon: "/dist/assets/vision/globe.png",
+    icon: "/images/red-panda.jpg",
   },
   {
     headtext: "Committed Individuals",
     subtext: "worldwide are eager to contribute their talents.",
-    icon: "/dist/assets/vision/run.png",
+    icon: "/images/red-panda.jpg",
   },
   {
     headtext: "Connecting People",
     subtext: "around shared goals can achieve extraordinary results.",
-    icon: "/dist/assets/vision/people.png",
+    icon: "/images/red-panda.jpg",
   },
 ];
  
@@ -125,7 +123,7 @@ const ContactCTA = () => (
 const OurVision = () => (
   <main className="ov-page">
     <BannerPhoto
-      image="/dist/assets/Vision/Banner.jpg"
+      image="/images/vision/Banner.jpg"
     /> 
     <VisionIntro />
     <WhatWeBelieve />

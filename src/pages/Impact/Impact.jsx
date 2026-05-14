@@ -8,19 +8,19 @@ const stats = [
   {
     text: ["Partnered with ", "10", " high-impact grassroots groups"],
     highlight: "10",
-    icon: '../dist/assets/ImpactPics/handHeart.png',
+    icon: '/images/red-panda.jpg',
     alt: "Handshake heart icon",
   },
   {
     text: ["Touched the lives of ", "5,000+", " people across Africa and Asia"],
     highlight: "5,000+",
-    icon: '../dist/assets/ImpactPics/world.png',
+    icon: '/images/red-panda.jpg',
     alt: "Globe icon",
   },
   {
     text: ["Mobilized ", "50+", " volunteers to help our partners"],
     highlight: "50+",
-    icon: '../dist/assets/ImpactPics/people.png',
+    icon: '/images/red-panda.jpg',
     alt: "People group icon",
   },
 ];
@@ -67,7 +67,7 @@ const ImpactCards = [
 		train more than 3,000 family farmers in sustainable agriculture 
 		practices – boosting crop yields by 75 percent, strengthening food 
 		security, and building trust across communities.`,
-		imageUrl: "/dist/assets/ImpactPics/Congo.jpg"
+		imageUrl: "/images/ImpactPics/Congo.jpg"
 	},
 	{
 		country: "The Phillippines",
@@ -76,7 +76,7 @@ const ImpactCards = [
 				therapy for Balik Kaanyag clinicians – bringing healing for child 
 				survivors of sexual abuse and supporting caregivers in previously-unserved 
 				communities.`,
-		imageUrl: "/dist/assets/ImpactPics/Philippines.jpg"
+		imageUrl: "/images/ImpactPics/Philippines.jpg"
 	},
 	{
 		country: "Uganda",
@@ -84,7 +84,7 @@ const ImpactCards = [
 		description: `An Acting Globally grant allowed Islamic Women’s Initiative 
 				for Justice, Law and peace to offer counseling and community education 
 				reaching 200 survivors and women threatened by gender-based violence.`,
-		imageUrl: "/dist/assets/ImpactPics/Uganda.jpeg"
+		imageUrl: "/images/ImpactPics/Uganda.jpeg"
 	},
 	{
 		country: "Iraq",
@@ -93,7 +93,7 @@ const ImpactCards = [
 				expand literacy and digital-skills training for 150 women and girls 
 				at a Women’s Center in Sinjar – helping survivors of a 2014 genocide 
 				targeting Yazidis rebuild their lives.`,
-		imageUrl: "/dist/assets/ImpactPics/Iraq.jpeg"
+		imageUrl: "/images/ImpactPics/Iraq.jpeg"
 	},
 	{
 		country: "DRC and Rwanda",
@@ -102,7 +102,7 @@ const ImpactCards = [
 				volunteers who coached students applying to international 
 				universities – opening opportunities for young people committed to 
 				using their education to drive change in their countries.`,
-		imageUrl: "/dist/assets/ImpactPics/Rwanda.jpg"
+		imageUrl: "/images/ImpactPics/Rwanda.jpg"
 	},
 	{
 		country: "Cambodia",
@@ -111,7 +111,7 @@ const ImpactCards = [
 				to upgrade computers and other tools in its education center – 
 				strengthening language skills and offering training for hundreds 
 				of young people pursuing careers.`,
-		imageUrl: "/dist/assets/ImpactPics/Cambodia.jpg"
+		imageUrl: "/images/ImpactPics/Cambodia.jpg"
 	},
 	{
 		country: "India",
@@ -120,7 +120,7 @@ const ImpactCards = [
 				incorporate AI and digital awareness into the education and training 
 				it provides to more than 1,000 marginalized children through its Learning 
 				Centre in Kolkata.`,
-		imageUrl: "/dist/assets/ImpactPics/India.jpg"
+		imageUrl: "/images/ImpactPics/India.jpg"
 	},
 	{
 		country: "Cameroon",
@@ -128,7 +128,7 @@ const ImpactCards = [
 		description: `Acting Globally volunteers are supporting Association des 
 				Acteurs de Développement (ADEV) in preparing a strategic plan to engage 
 				young people in initiatives that advance climate justice.`,
-		imageUrl: "/dist/assets/ImpactPics/Cameroon.JPG"
+		imageUrl: "/images/ImpactPics/Cameroon.JPG"
 	},
 ];
 
@@ -147,7 +147,7 @@ function Impact() {
     return(
         <div>
 
-			<BannerPhoto image="../dist/assets/ImpactPics/Banner.jpeg"/> 
+			<BannerPhoto image="/images/red-panda.jpg"/> 
 			<Intro />
             <PartnerSection />
       </div>
