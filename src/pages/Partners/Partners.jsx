@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import PartnerCard from '../../components/Cards/PartnerCard';
-// import Button from '../../components/Button/Button';
 import BannerPhoto from "../../components/BannerPhoto/BannerPhoto";
+import '../Impact/Impact.css';
 
 /* ── intro ── */
 const Intro = () => (
