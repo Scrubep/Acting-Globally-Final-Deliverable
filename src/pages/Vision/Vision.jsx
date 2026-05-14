@@ -24,17 +24,17 @@ const beliefCards = [
   {
     headtext: "Sustainable Change",
     subtext: "must be driven by those closest to the needs they address.",
-    icon: "/images/red-panda.jpg",
+    icon: "/images/vision/globe.png",
   },
   {
     headtext: "Committed Individuals",
     subtext: "worldwide are eager to contribute their talents.",
-    icon: "/images/red-panda.jpg",
+    icon: "/images/vision/run.png",
   },
   {
     headtext: "Connecting People",
     subtext: "around shared goals can achieve extraordinary results.",
-    icon: "/images/red-panda.jpg",
+    icon: "/images/vision/people.png",
   },
 ];
  

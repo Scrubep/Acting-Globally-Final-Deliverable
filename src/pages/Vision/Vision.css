@@ -29,7 +29,7 @@
 .ov-section-title {
   font-family: var(--ov-font-serif);
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--ov-blue-dark);
   text-align: center;
   margin-bottom: 1rem;
@@ -46,7 +46,7 @@
 }
 
 .ov-vision-intro__body {
-  font-size: 1.05rem;
+  font-size: 1.3rem;
   color: var(--ov-text-mid);
   line-height: 1.7;
   max-width: 40rem;
@@ -106,8 +106,8 @@
 
 .ov-banner__title {
   font-family: var(--ov-font-serif);
-  font-size: 1.9rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 600;
   color: #ffffff;
   line-height: 1.4;
   max-width: 45rem;
@@ -124,7 +124,7 @@
 }
 
 .ov-pillars__intro {
-  font-size: 0.975rem;
+  font-size: 1.25rem;
   color: var(--ov-text-mid);
   line-height: 1.75;
   margin-bottom: 1.25rem;
@@ -153,6 +153,7 @@
   color: #ffffff;
   font-family: var(--ov-font-serif);
   font-size: 1.2rem;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,20 +169,20 @@
 
 .ov-pillar__title {
   font-family: var(--ov-font-serif);
-  font-size: 1.25rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: var(--ov-blue-mid);
   margin-bottom: 0.6rem;
 }
 
 .ov-pillar__body {
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   color: var(--ov-text-mid);
   line-height: 1.75;
 }
 
 .ov-pillars__closing {
-  font-size: 0.975rem;
+  font-size: 1.15rem;
   color: var(--ov-text-mid);
   line-height: 1.75;
   margin-top: 1rem;
@@ -192,7 +193,7 @@
    ================================================================ */
 .ov-contact {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 1rem 2rem;
 }
 
 .ov-contact__heading {

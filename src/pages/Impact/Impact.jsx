@@ -8,20 +8,20 @@ const stats = [
   {
     text: ["Partnered with ", "10", " high-impact grassroots groups"],
     highlight: "10",
-    icon: '/images/red-panda.jpg',
+    icon: '/images/ImpactPics/handHeart.png',
     alt: "Handshake heart icon",
   },
   {
     text: ["Touched the lives of ", "5,000+", " people across Africa and Asia"],
     highlight: "5,000+",
-    icon: '/images/red-panda.jpg',
+    icon: '/images/ImpactPics/world.png',
     alt: "Globe icon",
   },
   {
     text: ["Mobilized ", "50+", " volunteers to help our partners"],
     highlight: "50+",
-    icon: '/images/red-panda.jpg',
-    alt: "People group icon",
+    icon: '/images/ImpactPics/people.png',
+    alt: "Volunteer icon",
   },
 ];
  
@@ -147,7 +147,7 @@ function Impact() {
     return(
         <div className="impact-page">
 
-			<BannerPhoto image="/images/red-panda.jpg"/> 
+			<BannerPhoto image="/images/ImpactPics/Banner.jpeg"/> 
 			<Intro />
             <PartnerSection />
       </div>
