@@ -145,7 +145,7 @@ const PartnerSection = () => (
 
 function Impact() {
     return(
-        <div>
+        <div className="impact-page">
 
 			<BannerPhoto image="/images/red-panda.jpg"/> 
 			<Intro />

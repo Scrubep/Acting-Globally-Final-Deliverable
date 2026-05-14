@@ -15,7 +15,7 @@
   --vs-text-dark:   #1a2e3b;
   --vs-text-mid:    #3a5a6e;
   --vs-text-light:  #ffffff;
-  --vs-max-width:   1040px;
+  --vs-max-width:   65rem;
   --vs-font-serif:  "DM Serif Display", Georgia, serif;
   --vs-font-sans:   "DM Sans", system-ui, sans-serif;
 }
@@ -43,7 +43,7 @@
 .vs-hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 340px;
+  min-height: 21.25rem;
   background: linear-gradient(135deg, #CCECF4, #4099AF);
   overflow: hidden;
 }
@@ -69,7 +69,7 @@
   font-size: 0.975rem;
   color: var(--vs-text-mid);
   line-height: 1.7;
-  max-width: 380px;
+  max-width: 23.75rem;
 }
 
 .vs-hero__cta {
@@ -79,7 +79,7 @@
   font-size: 0.95rem;
   font-weight: 600;
   padding: 0.7rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   text-decoration: none;
   align-self: flex-start;
   transition: background 0.2s;
@@ -137,10 +137,10 @@
 
 .vs-step__bubble {
   flex-shrink: 0;
-  width: 42px;
-  height: 42px;
+  width: 2.625rem;
+  height: 2.625rem;
   border-radius: 50%;
-  border: 2px solid var(--vs-accent);
+  border: 0.125rem solid var(--vs-accent);
   color: var(--vs-blue-mid);
   font-weight: 700;
   font-size: 1rem;
@@ -153,7 +153,7 @@
 
 .vs-step__line {
   flex: 1;
-  height: 2px;
+  height: 0.125rem;
   background: var(--vs-accent);
 }
 
@@ -188,10 +188,10 @@
 
 .vs-form-card {
   background: #ffffff;
-  border: 1px solid #d0dfe8;
-  border-radius: 12px;
+  border: 0.0625rem solid #d0dfe8;
+  border-radius: 0.75rem;
   padding: 2.5rem;
-  box-shadow: 0 4px 20px rgba(27, 79, 106, 0.07);
+  box-shadow: 0 0.25rem 1.25rem rgba(27, 79, 106, 0.07);
 }
 
 .vs-form__title {
@@ -243,8 +243,8 @@
   font-size: 0.9rem;
   color: var(--vs-text-dark);
   background: #ffffff;
-  border: 1px solid #b8cdd8;
-  border-radius: 6px;
+  border: 0.0625rem solid #b8cdd8;
+  border-radius: 0.375rem;
   padding: 0.55rem 0.75rem;
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
@@ -255,7 +255,7 @@
 .vs-select:focus,
 .vs-textarea:focus {
   border-color: var(--vs-blue-mid);
-  box-shadow: 0 0 0 3px rgba(42, 127, 160, 0.12);
+  box-shadow: 0 0 0 0.1875rem rgba(42, 127, 160, 0.12);
 }
 
 .vs-select {
@@ -291,10 +291,10 @@
   font-size: 1rem;
   font-weight: 600;
   padding: 0.85rem 0;
-  width: 380px;
+  width: 23.75rem;
   max-width: 100%;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   cursor: pointer;
   transition: background 0.2s;
 }
@@ -304,12 +304,12 @@
 /* ================================================================
    RESPONSIVE
    ================================================================ */
-@media (max-width: 860px) {
+@media (max-width: 53.75rem) {
   .vs-hero {
     grid-template-columns: 1fr;
   }
 
-  .vs-hero__image-wrap { height: 240px; }
+  .vs-hero__image-wrap { height: 15rem; }
 
   .vs-hero__text {
     padding: 2.5rem 2rem;

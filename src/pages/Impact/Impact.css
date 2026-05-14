@@ -1,4 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+:root {
+  --is-blue:      #5bbfd6;
+  --is-text-dark: #1a2e3b;
+  --is-max-width: 53.75rem;
+  --impact-font-heading: Helvetica, Arial, sans-serif;
+  --impact-font-body:    "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* ── Page scope: fonts + sizes for Impact only ── */
+.impact-page {
+  font-family: var(--impact-font-body);
+}
+
+.impact-page h1.headers-White {
+  font-family: var(--impact-font-heading);
+}
 
 .impact-intro {
   max-width: var(--ov-max-width);
@@ -11,63 +26,80 @@
   font-size: 1.05rem;
   color: var(--ov-text-mid);
   line-height: 1.7;
-  max-width: 640px;
+  max-width: 40rem;
   margin: 0 auto 2.5rem;
 }
- 
-:root {
-  --is-blue:      #5bbfd6;
-  --is-text-dark: #1a2e3b;
-  --is-max-width: 860px;
-  --is-font:      "DM Sans", system-ui, sans-serif;
-}
- 
+
 .is-section {
-  font-family: var(--is-font);
+  font-family: var(--impact-font-body);
   text-align: center;
   padding: 3rem 2rem;
   max-width: var(--is-max-width);
   margin: 0 auto;
 }
- 
+
 .is-subtitle {
+  font-family: var(--impact-font-body);
   font-size: 1rem;
   font-weight: 700;
   color: var(--is-text-dark);
   margin-bottom: 2.5rem;
 }
- 
+
 .is-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
- 
+
 .is-stat {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
 }
- 
+
 .is-stat__text {
-  font-size: 1.05rem;
+  font-family: var(--impact-font-body);
+  font-size: 1.375rem;
   color: var(--is-text-dark);
   line-height: 1.6;
 }
- 
+
 .is-stat__highlight {
+  font-family: var(--impact-font-body);
+  font-size: 1.5625rem;
   color: var(--is-blue);
   font-weight: 700;
 }
- 
+
 .is-icon {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   object-fit: contain;
 }
- 
-@media (max-width: 600px) {
+
+/* ── Impact cards (component lives elsewhere; scoped to this page) ── */
+.impact-page .impact-card {
+  font-family: var(--impact-font-body);
+}
+
+.impact-page .impact-card__country {
+  font-family: var(--impact-font-body);
+  font-size: 1.375rem;
+}
+
+.impact-page .impact-card__title {
+  font-family: var(--impact-font-heading);
+  font-size: 1.375rem;
+}
+
+.impact-page .impact-card__description {
+  font-family: var(--impact-font-body);
+  font-size: 1.375rem;
+}
+
+@media (max-width: 37.5rem) {
   .is-grid {
     grid-template-columns: 1fr;
   }

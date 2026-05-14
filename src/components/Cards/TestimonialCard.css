@@ -11,8 +11,8 @@
   --tc-accent:     #7ecfe0;
   --tc-text-quote: #2c2c2c;
   --tc-text-name:  #1a1a1a;
-  --tc-radius:     6px;
-  --tc-width:      320px;
+  --tc-radius:     0.375rem;
+  --tc-width:      20rem;
 }
 
 /* ── Card shell ── */
@@ -20,9 +20,9 @@
   width: var(--tc-width);
   background: var(--tc-bg);
   border-radius: var(--tc-radius);
-  border-left: 5px solid var(--tc-accent);
+  border-left: 0.3125rem solid var(--tc-accent);
   padding: 2rem 1.75rem 1.75rem;
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: 0.25rem 0.25rem 0.75rem rgba(0, 0, 0, 0.12);
   font-family: "DM Sans", sans-serif;
 }
 
