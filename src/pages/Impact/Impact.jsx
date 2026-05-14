@@ -8,19 +8,19 @@ const stats = [
   {
     text: ["Partnered with ", "10", " high-impact grassroots groups"],
     highlight: "10",
-    icon: '../dist/assets/red-panda.jpg',
+    icon: '../dist/assets/ImpactPics/handHeart.png',
     alt: "Handshake heart icon",
   },
   {
     text: ["Touched the lives of ", "5,000+", " people across Africa and Asia"],
     highlight: "5,000+",
-    icon: '../dist/assets/red-panda.jpg',
+    icon: '../dist/assets/ImpactPics/world.png',
     alt: "Globe icon",
   },
   {
     text: ["Mobilized ", "50+", " volunteers to help our partners"],
     highlight: "50+",
-    icon: '../dist/assets/red-panda.jpg',
+    icon: '../dist/assets/ImpactPics/people.png',
     alt: "People group icon",
   },
 ];
@@ -70,13 +70,13 @@ const ImpactCards = [
 		imageUrl: "/dist/assets/ImpactPics/Congo.jpg"
 	},
 	{
-		country: "The Phillipines",
+		country: "The Phillippines",
 		title: "Healing Children",
 		description: `An Acting Globally grant financed trauma-informed 
 				therapy for Balik Kaanyag clinicians – bringing healing for child 
 				survivors of sexual abuse and supporting caregivers in previously-unserved 
 				communities.`,
-		imageUrl: "/dist/assets/ImpactPics/Phillipines.jpg"
+		imageUrl: "/dist/assets/ImpactPics/Philippines.jpg"
 	},
 	{
 		country: "Uganda",
@@ -93,7 +93,7 @@ const ImpactCards = [
 				expand literacy and digital-skills training for 150 women and girls 
 				at a Women’s Center in Sinjar – helping survivors of a 2014 genocide 
 				targeting Yazidis rebuild their lives.`,
-		imageUrl: "/dist/ssets/ImpactPics/Iraq.jpeg"
+		imageUrl: "/dist/assets/ImpactPics/Iraq.jpeg"
 	},
 	{
 		country: "DRC and Rwanda",
@@ -147,7 +147,7 @@ function Impact() {
     return(
         <div>
 
-			<BannerPhoto image="../dist/assets/red-panda.jpg"/> 
+			<BannerPhoto image="../dist/assets/ImpactPics/Banner.jpeg"/> 
 			<Intro />
             <PartnerSection />
       </div>

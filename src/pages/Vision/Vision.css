@@ -4,8 +4,6 @@
    Excludes navbar and footer — handled by parent layout.
    ============================================================ */
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap");
-
 /* ── Design tokens ── */
 :root {
   --ov-blue-dark:  #1b4f6a;
@@ -16,8 +14,8 @@
   --ov-text-dark:  #1a2e3b;
   --ov-text-mid:   #3a5a6e;
   --ov-max-width:  960px;
-  --ov-font-serif: "DM Serif Display", Georgia, serif;
-  --ov-font-sans:  "DM Sans", system-ui, sans-serif;
+  --ov-font-serif: "Helvetica Neue", Arial, sans-serif;
+  --ov-font-sans:  "Helvetica Neue", Arial, sans-serif;
 }
 
 /* ── Page wrapper ── */
@@ -71,13 +69,12 @@
 
 .ov-photo-grid__img {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
 }
 
-.ov-photo-grid__img:hover { transform: scale(1.03); }
 
 /* ================================================================
    WHAT WE BELIEVE
