@@ -2,8 +2,6 @@
    VolunteerSignup.css
    ============================================================ */
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap");
-
 /* ── Tokens ── */
 :root {
   --vs-blue-dark:   #1b4f6a;
@@ -16,8 +14,8 @@
   --vs-text-mid:    #3a5a6e;
   --vs-text-light:  #ffffff;
   --vs-max-width:   65rem;
-  --vs-font-serif:  "DM Serif Display", Georgia, serif;
-  --vs-font-sans:   "DM Sans", system-ui, sans-serif;
+  --vs-font-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --vs-font-sans:   "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -53,7 +51,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 1.1rem;
-  padding: 3rem 3rem 3rem 4rem;
+  padding: 3rem 2rem 3rem 6rem;
 }
 
 .vs-hero__title {
@@ -66,7 +64,7 @@
 }
 
 .vs-hero__body {
-  font-size: 0.975rem;
+  font-size: 1.25rem;
   color: var(--vs-text-mid);
   line-height: 1.7;
   max-width: 23.75rem;
@@ -165,14 +163,14 @@
 }
 
 .vs-step__title {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--vs-text-dark);
   margin-bottom: 0.4rem;
 }
 
 .vs-step__body {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--vs-text-mid);
   line-height: 1.65;
 }
