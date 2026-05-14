@@ -3,8 +3,6 @@
    Plain white card with left border accent and drop shadow.
    ============================================================ */
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500&display=swap");
-
 /* ── Design tokens ── */
 :root {
   --tc-bg:         #ffffff;
@@ -23,7 +21,7 @@
   border-left: 0.3125rem solid var(--tc-accent);
   padding: 2rem 1.75rem 1.75rem;
   box-shadow: 0.25rem 0.25rem 0.75rem rgba(0, 0, 0, 0.12);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* ── Blockquote reset ── */
@@ -33,7 +31,7 @@
 
 /* ── Quote text ── */
 .tc-quote__text {
-  font-family: "DM Serif Display", serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 1.05rem;
   line-height: 1.75;
