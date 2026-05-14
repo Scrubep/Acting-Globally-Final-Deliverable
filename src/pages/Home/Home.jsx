@@ -102,7 +102,7 @@ function Home() {
               <li>Increase your visibility with partners and donors</li>
               <li>Share your successes. Learn from groups in other countries</li>
             </ul>
-            <img src="/dist/assets/home/grassroots.jpg" alt="Grassroots groups" className="engagement-card__image" />
+            <img src="/dist/assets/home/grassroot.jpg" alt="Grassroots groups" className="engagement-card__image" />
           </div>
         </div>
       </section>
