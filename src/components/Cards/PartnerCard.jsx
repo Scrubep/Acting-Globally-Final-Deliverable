@@ -17,7 +17,10 @@ const PartnerCard = ({ country, orgName, tagline, description, imageUrl}) => {
       </div>
 
       <div className="card-body">
-        <p className="card-text">{description}</p>
+        <div className="card-text">
+          <hr className="card-header-divider" />
+          {description}
+        </div>
         {imageUrl && (
           <img src={imageUrl} alt={orgName} className="card-image" />
         )}
