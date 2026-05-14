@@ -288,8 +288,8 @@
 }
  
 .opportunity-card__icon-img {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   object-fit: contain;
   display: block;
   margin: 1.5625rem auto 0.9375rem;
@@ -297,7 +297,7 @@
  
 .opportunity-card__title {
   font-family: var(--font-body);
-  font-size: 1.875rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: var(--blue);
   margin-bottom: 0.625rem;
@@ -305,7 +305,7 @@
  
 .opportunity-card__text {
   font-family: var(--font-body);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.65;
   color: var(--mid);
 }

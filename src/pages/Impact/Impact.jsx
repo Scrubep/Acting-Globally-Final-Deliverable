@@ -39,7 +39,6 @@ const StatText = ({ parts, highlight }) => (
 /* ── Component ── */
 const ImpactStats = () => (
   <section className="is-section">
-    <p className="is-subtitle">Since our founding in 2023, Acting Globally has:</p>
     <div className="is-grid">
       {stats.map(({ text, highlight, icon, alt }) => (
         <div key={highlight} className="is-stat">
@@ -55,6 +54,7 @@ const ImpactStats = () => (
 const Intro = () => (
   <section className="impact-intro" id="impact">
     <h1 className="headers-White">Our Impact</h1>
+	<p className="is-subtitle">Since our founding in 2023, Acting Globally has:</p>
     <ImpactStats />
   </section>
 );

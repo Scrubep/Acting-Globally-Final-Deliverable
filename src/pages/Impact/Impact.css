@@ -33,14 +33,14 @@
 .is-section {
   font-family: var(--impact-font-body);
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 1rem 2rem;
   max-width: var(--is-max-width);
   margin: 0 auto;
 }
 
 .is-subtitle {
   font-family: var(--impact-font-body);
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--is-text-dark);
   margin-bottom: 2.5rem;
@@ -61,7 +61,7 @@
 
 .is-stat__text {
   font-family: var(--impact-font-body);
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   color: var(--is-text-dark);
   line-height: 1.6;
 }
@@ -77,26 +77,6 @@
   width: 6.25rem;
   height: 6.25rem;
   object-fit: contain;
-}
-
-/* ── Impact cards (component lives elsewhere; scoped to this page) ── */
-.impact-page .impact-card {
-  font-family: var(--impact-font-body);
-}
-
-.impact-page .impact-card__country {
-  font-family: var(--impact-font-body);
-  font-size: 1.375rem;
-}
-
-.impact-page .impact-card__title {
-  font-family: var(--impact-font-heading);
-  font-size: 1.375rem;
-}
-
-.impact-page .impact-card__description {
-  font-family: var(--impact-font-body);
-  font-size: 1.375rem;
 }
 
 @media (max-width: 37.5rem) {
