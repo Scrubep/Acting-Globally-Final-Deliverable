@@ -32,23 +32,6 @@
 }
  
 /* ══════════════════════════════════════
-   1. HERO
-══════════════════════════════════════ */
-.home__hero {
-  width: 100%;
-  height: 21.25rem;
-  overflow: hidden;
-}
- 
-.home__hero-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  display: block;
-}
- 
-/* ══════════════════════════════════════
    2. INTRO
 ══════════════════════════════════════ */
 .home__intro {
