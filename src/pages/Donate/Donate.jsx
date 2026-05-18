@@ -46,6 +46,7 @@ const HeroBanner = () => (
         Donations are tax-deductible to the extent allowed by law.
       </p>
     </div>
+    // you can add an iframe here for donorbox 
   </div>
 );
 
