@@ -26,6 +26,7 @@ Git
 
 
 ## Website Pages  
+###### note for donate page: commented in the page is the location where you can add the donorbox as an iframe(Donate.jsx - line 49), you may need to size the iframe so it fits in the banner or change the banner if it is too small
 ### Home:  
 <img width="2382" height="7682" alt="home" src="https://github.com/user-attachments/assets/7bdd627e-f0c4-4472-8dec-69834c826034" />
 
