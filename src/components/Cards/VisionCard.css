@@ -1,12 +1,12 @@
 
 /* ── Design tokens ── */
 :root {
-  --vc-bg: #d6e8f5;
+  --vc-bg: #DEF6FF;
   --vc-bg-inner: #e8f3fb;
   --vc-accent: #1b6f8a;
-  --vc-accent-light: #c5dff0;
-  --vc-wave-1: #bdd6eb;
-  --vc-wave-2: #c9e0f2;
+  --vc-accent-light: #CCECF4;
+  --vc-wave-1: #afdde8;
+  --vc-wave-2: #CCECF4;
   --vc-text-head: #1b4f6a;
   --vc-text-body: #3a6070;
   --vc-icon-bg: #ffffff;
