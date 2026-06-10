@@ -32,20 +32,25 @@ const HeroBanner = () => (
       <h1 className="headers-Blue">
         Real Change <br /> Starts with You
       </h1>
+      <br />
+      <br />
       <p className="donate-hero__body">
         Acting Globally uses your entire donation to fund grants we provide to
         grassroots groups across Africa and Asia.
       </p>
+      <br />
       <p className="donate-hero__body">
         Your contribution allows trusted community organizations to expand
         access to healthcare, education, economic opportunity — Transforming
         lives for vulnerable populations around the world.
       </p>
+      <br />
       <p className="donate-hero__legal">
         Acting Globally is a U.S. Section 501(c)(3) nonprofit organization.
         Donations are tax-deductible to the extent allowed by law.
       </p>
     </div>
+    
      {/* you can add an iframe here for donorbox  */}
   </div>
 );
